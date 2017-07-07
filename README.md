@@ -7,7 +7,9 @@ Manage all your ebooks locally and send it to your reader!
 Make sure, you have following installed:
 
 Apache / Nginx
+
 PHP 5.6+
+
 PHP-ZIP-Module 
 
 ## Usage
@@ -17,5 +19,7 @@ Enter your credentials in settings.php and drag and drop your books into the foo
 ## Whats next?
 
 Support for .mobi
+
 Bulk import
+
 new design
