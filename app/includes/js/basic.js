@@ -24,7 +24,7 @@ function ExecAjax(program, id, urldata) {
         data: urldata,
         success: function(data) {
 
-            else if (data.match(/ERROR/g)) {
+            if (data.match(/ERROR/g)) {
                 var array = data.split('|');
                 $('#output').html(array[1]);
             }
