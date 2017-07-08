@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="includes/css/bootstrap.css">
     <link rel="stylesheet" href="includes/css/custom.css">
 		<link rel="stylesheet" href="includes/css/font-awesome.css">
-    <link rel="stylesheet" href="includes/dropzone/css/dropzone.css">
+    <link rel="stylesheet" href="includes/css/dropzone.css">
     <script src="includes/js/jquery-3.2.1.min.js"></script>
-    <script src="includes/dropzone/js/dropzone.js"></script>
+    <script src="includes/js/dropzone.js"></script>
     <script src="includes/js/bootstrap.min.js"></script>
-	<script src="app/includes/js/basic.js"></script>
+	<script src="includes/js/basic.js"></script>
 </head>
 
 <body>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<?PHP include 'header.php'; ?>
+	<?PHP include 'header.php'; 
+  global $lang; ?>
 
 </head>
 <body>
@@ -35,7 +36,8 @@
         
       </div>
       <div class="modal-footer">
-      <button type="button" class="btn btn-success" id="confirmsend" data-dismiss="modal">Send</button>
+      <button type="button" class="btn btn-success" id="confirmsend" 
+        data-dismiss="modal">Send</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>

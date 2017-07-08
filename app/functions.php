@@ -8,11 +8,12 @@ error_reporting(E_ALL);
 
 function countBooksOnStartup()
 {
-	global $db, $statements;
+	global $db, $statements, $lang;
 	$count = $db->selectRows($statements['countbooksonstartup']);
-	$placeholder = $count['books'] . ' Books in Database';
+	$placeholder = $count['books'] . ' in database';
 	echo '<div class="input-group">
-  			<input type="text" class="form-control" name="searchterm" id="searchterm" placeholder="'.$placeholder.'">
+  			<input type="text" class="form-control" name="searchterm" id="searchterm" 
+  			placeholder="'.$placeholder.'">
   			<span class="input-group-btn">
             <button class="btn btn-default" id="performsearch" onclick="performSearch()" type="button">Search</button>
             </span>
