@@ -3,7 +3,8 @@
 
 # Bookery
 
-Manage all your ebooks locally and send it to your reader!
+Manage all your ebooks locally and send it to your reader! 
+
 
 ## Installation
 
@@ -11,13 +12,21 @@ Make sure, you have following installed:
 
 Apache / Nginx
 
+MySQL
+
 PHP 5.6+
 
 PHP-ZIP-Module 
 
 ## Usage
 
-Enter your credentials in settings.php and drag and drop your books into the footer - that's it!
+###Enter your credentials in settings.php:
+
+Database credentials
+
+Mail settings
+
+ -> and drag and drop your books into the footer - that's it!
 
 ## Whats next?
 
