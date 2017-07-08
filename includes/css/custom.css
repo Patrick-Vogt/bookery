@@ -122,5 +122,16 @@ column-count: 1;
 
 #searchright {
 	margin-top: 10px;
-    margin-left: 150px;
+  width: 100%;
+}
+
+#upload {
+  background-color: #37AADA;
+  color: #fff;
+  font-size: 28px !important;
+}
+
+.navbar {
+  background-color: #37AADA !important;
+  border-color: #37AADA !important;
 }

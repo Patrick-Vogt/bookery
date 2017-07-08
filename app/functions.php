@@ -169,7 +169,7 @@ function saveEpub($book, $fileformat)
 					$cover = (string)$track['href'];
 					if ($isoebps == TRUE){
 						if(preg_match("/(html|xhtml|htm)/i", $cover)){
- 							$coverpath = 'app/includes/img/defaultimage.jpg';
+ 							$coverpath = 'http://via.placeholder.com/230x350&text='.$title;
 						}
 						else {
 							$coverpath = TMPDIRECTORY . $subtmp . '/OEBPS/' . $cover;

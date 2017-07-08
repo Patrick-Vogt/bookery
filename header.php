@@ -27,7 +27,7 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" rel="home">Bookery</a>
+		<a class="navbar-brand" rel="home" style="font-size: 30px;">Bookery</a>
 	</div>
 
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
