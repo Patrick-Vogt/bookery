@@ -1,11 +1,5 @@
 <?php
 
-// require_once 'settings.php';
-
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 function countBooksOnStartup()
 {
 	global $db, $statements, $lang;
@@ -45,7 +39,6 @@ function performsearch($searchquery) {
 
 	for ($i=0; $i < count($searchresults); $i++) { 
 	  
-		
 		echo '<div class="masonry-item">
                        <img src="'.EBOOKDIRECTORY.$searchresults[$i]['coverpath'].'" id="'.EBOOKDIRECTORY.$searchresults[$i]['bookpath'].'" 
                        name="'.$searchresults[$i]['author_name'].' - '.$searchresults[$i]['title'].'" onclick="sendReaderModal(this.id, this.name)" class="img-responsive center-block" alt="">
@@ -55,14 +48,8 @@ function performsearch($searchquery) {
 }
 
 
-
-/********************************************************************************
-* SEND BOOK TO READER
-********************************************************************************/
-
 function SendMailToReader($ebookfile)
 {
-	var_dump($ebookfile);
 	require 'includes/classes/PHPMailer/PHPMailerAutoload.php';
 
 	$mail = new PHPMailer;
@@ -79,7 +66,7 @@ function SendMailToReader($ebookfile)
 		$mail->addAddress(EBOOK_MAIL);
 		$mail->Body = 'Book in attachment';
 
-		// Anhang
+		// Attachment
 
 		if (isset($ebookfile) && file_exists($ebookfile)) {
 			$mail->addStringAttachment(file_get_contents($ebookfile), basename($ebookfile));
@@ -97,7 +84,7 @@ function SendMailToReader($ebookfile)
 		}
 		else {
 		
-				echo 'INFO|<p style="font-weight:bold;color:#006633">' . $datetime . ' : Ebook successfully sent to ' . $mailto . '</p>';
+				echo 'INFO|<p style="font-weight:bold;color:#006633">' . $datetime . ' : Ebook successfully sent to ' . $EBOOK_MAIL . '</p>';
 			
 
 			return true;
@@ -115,11 +102,13 @@ function SendMailToReader($ebookfile)
 	}
 } // End Function
 
+
+
+
 function saveBook($bookfile)
 {
-
-
 	$fileformat = pathinfo($bookfile['file']['name'], PATHINFO_EXTENSION);
+	var_dump($fileformat);
 	switch ($fileformat) {
 	case 'epub':
 		saveEpub($bookfile, $fileformat);
@@ -129,8 +118,6 @@ function saveBook($bookfile)
 		break;
 
 	default:
-
-		// code...
 
 		break;
 	}
@@ -211,10 +198,10 @@ function saveEpub($book, $fileformat)
 
 
 
-
 function moveFileToDirectory($book, $coverpath, $author, $title, $fileformat, $subtmp)
 {
 
+	$fileformat = "png"; // Amazon will convert automatically
 	// Create dir with authorname
 
 	if (strlen($author) <=1) {
@@ -232,9 +219,10 @@ function moveFileToDirectory($book, $coverpath, $author, $title, $fileformat, $s
 		mkdir(EBOOKDIRECTORY . $author . '/' . $title);
 	}
 
-	// move cover and book into dir
-
-	copy($coverpath, EBOOKDIRECTORY . $author . '/' . $title . '/' . removeSpecialChars(basename($coverpath))); // Cover
+	// Resize cover before saving in filedir
+   $image = new \Eventviva\ImageResize($coverpath);
+                $image->resizeToWidth('300');
+                $image->save(EBOOKDIRECTORY . $author . '/' . $title . '/' . removeSpecialChars(basename($coverpath)));
 	rename($book, EBOOKDIRECTORY . $author . '/' . $title . '/' . $title . '.' . $fileformat);
 
 	// EBOOKDIRECTORY can be changed after indexing, it's global.
@@ -246,8 +234,6 @@ function moveFileToDirectory($book, $coverpath, $author, $title, $fileformat, $s
 
 	saveBookDetailsIntoDatabase($dyncoverpath, $dynbookpath, $author, $title, $subtmp);
 }
-
-
 
 
 
