@@ -3,6 +3,8 @@
 
 # Bookery
 
+![alt text](https://user-images.githubusercontent.com/12330252/57523650-1ea5a800-7358-11e9-9730-8a569183bba5.jpg)
+
 Manage all your ebooks locally and send it to your reader!
 Install Bookery on your NAS (i.e. Synology) and drop all your epubs into the upload field. 
 Bookery will extract the needed metadata (author, title, cover) and organize the needed folder structure. 
