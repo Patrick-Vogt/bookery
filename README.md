@@ -4,9 +4,9 @@
 # Bookery
 
 Manage all your ebooks locally and send it to your reader!
-Install Bookery on your NAS (i.e. Synology) and drop all your ebooks into the upload field. 
+Install Bookery on your NAS (i.e. Synology) and drop all your epubs into the upload field. 
 Bookery will extract the needed metadata (author, title, cover) and organize the needed folder structure. 
-You can easily search all your books and send them with 2 clicks directly on your reader!
+You can easily search all your books and send them with 2 clicks directly on your reader! - Works with Amazon Kindle
 
 
 ## Installation
@@ -31,10 +31,7 @@ Mail settings
 
  -> and drag and drop your books into the footer - that's it!
 
-## Whats next?
+## Does it work with my Amazon Kindle?
 
-Support for .mobi
-
-Bulk import
-
-new design
+Yes! Just edit your Kindle Mail-Address in the settings and Bookery will send it it to your Kindle. 
+No need to convert files, if you send the book als a .png-File. amazon will do the converting for you.
