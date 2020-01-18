@@ -45,3 +45,6 @@ Once you're logged-in, just drop your .epub-files in the Uploader. Bookery will 
 
 Yes! Just enter your Kindle Mail-Address during registration and Bookery will send it it to your Kindle. 
 **No need** to convert files, if you send the book als a **.png**-File. Amazon will do the converting for you.
+
+## Missing Feature?
+Feel free to contribute or suggest new features!
