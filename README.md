@@ -1,4 +1,5 @@
-# Bookery V2 
+# Bookery V2
+[![GitHub issues](https://img.shields.io/github/issues/Patrick-Vogt/bookery)](https://github.com/Patrick-Vogt/bookery/issues) [![GitHub forks](https://img.shields.io/github/forks/Patrick-Vogt/bookery)](https://github.com/Patrick-Vogt/bookery/network) [![GitHub stars](https://img.shields.io/github/stars/Patrick-Vogt/bookery)](https://github.com/Patrick-Vogt/bookery/stargazers) [![GitHub license](https://img.shields.io/github/license/Patrick-Vogt/bookery)](https://github.com/Patrick-Vogt/bookery/blob/master/LICENSE)
 ### Based on Vue + Laravel
 
 
