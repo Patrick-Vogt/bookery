@@ -1,2 +1,11 @@
 
 \.vscode/
+/node_modules
+/public/hot
+/storage/*.key
+/vendor
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
