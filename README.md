@@ -1,8 +1,6 @@
 # Bookery V2 
 ### Based on Vue + Laravel
-<a href="{https://www.buymeacoffee.com/PatrickVogt}"><img width="120"
-src="https://yourdonation.rocks/images/badge.svg"
-alt="Donations Badge"></a>
+
 
 ![alt text](https://user-images.githubusercontent.com/12330252/72664720-f8362180-3a3b-11ea-8fd8-31f9bcd12b1b.png)
 ![alt text](https://user-images.githubusercontent.com/12330252/72664721-f8ceb800-3a3b-11ea-922f-2aa2765d914c.png)
