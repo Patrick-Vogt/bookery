@@ -18,7 +18,7 @@ Make sure, you have following installed:
 
  1. Apache / NginX
  2. MySQL / MariaDB
- 3. PHP 7.1+ & ZIP-Module
+ 3. PHP 7.2+ & ZIP-Module
 
 Install the requirements and setup in the following order: 
 
