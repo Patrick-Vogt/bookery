@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4b5488a55df9edd0d666f89cb60f89a",
+    "content-hash": "f77b49100c973c17dafb2077ea9ca00a",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -334,61 +334,6 @@
             "time": "2019-12-20T13:11:11+00:00"
         },
         {
-            "name": "gumlet/php-image-resize",
-            "version": "1.9.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/gumlet/php-image-resize.git",
-                "reference": "06339a9c1b167acd58173db226f57957a6617547"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/gumlet/php-image-resize/zipball/06339a9c1b167acd58173db226f57957a6617547",
-                "reference": "06339a9c1b167acd58173db226f57957a6617547",
-                "shasum": ""
-            },
-            "require": {
-                "ext-fileinfo": "*",
-                "ext-gd": "*",
-                "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "apigen/apigen": "^4.1",
-                "ext-exif": "*",
-                "ext-gd": "*",
-                "php-coveralls/php-coveralls": "^2.1",
-                "phpunit/phpunit": "^4.8"
-            },
-            "suggest": {
-                "ext-exif": "Auto-rotate jpeg files"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Gumlet\\": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Aditya Patadia",
-                    "homepage": "http://aditya.patadia.org/"
-                }
-            ],
-            "description": "PHP class to re-size and scale images",
-            "homepage": "https://github.com/gumlet/php-image-resize",
-            "keywords": [
-                "image",
-                "php",
-                "resize",
-                "scale"
-            ],
-            "time": "2019-01-01T13:53:00+00:00"
-        },
-        {
             "name": "jakub-onderka/php-console-color",
             "version": "v0.2",
             "source": {
@@ -478,16 +423,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v6.10.1",
+            "version": "v6.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "fe45ad5bc89e5e1b08ab2c8687f9be01c9c84d14"
+                "reference": "17af23842c259edcfd8c5b9e6a7c86596e040034"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/fe45ad5bc89e5e1b08ab2c8687f9be01c9c84d14",
-                "reference": "fe45ad5bc89e5e1b08ab2c8687f9be01c9c84d14",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/17af23842c259edcfd8c5b9e6a7c86596e040034",
+                "reference": "17af23842c259edcfd8c5b9e6a7c86596e040034",
                 "shasum": ""
             },
             "require": {
@@ -621,7 +566,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-01-08T21:17:42+00:00"
+            "time": "2020-01-14T15:12:09+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -688,16 +633,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "1.2.0",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "2533c389fd2a7573d4f7be279b1c33cf941c8dfc"
+                "reference": "34cf4ddb3892c715ae785c880e6691d839cff88d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/2533c389fd2a7573d4f7be279b1c33cf941c8dfc",
-                "reference": "2533c389fd2a7573d4f7be279b1c33cf941c8dfc",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/34cf4ddb3892c715ae785c880e6691d839cff88d",
+                "reference": "34cf4ddb3892c715ae785c880e6691d839cff88d",
                 "shasum": ""
             },
             "require": {
@@ -755,7 +700,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2020-01-09T22:41:09+00:00"
+            "time": "2020-01-16T01:18:13+00:00"
         },
         {
             "name": "league/commonmark-ext-table",
@@ -3340,16 +3285,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.7.0",
+            "version": "2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "4c97f814aa2f0dd4d5bedc89181c10ef12c004c5"
+                "reference": "fff6f1e4f36be0e0d0b84d66b413d9dcb0c49130"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/4c97f814aa2f0dd4d5bedc89181c10ef12c004c5",
-                "reference": "4c97f814aa2f0dd4d5bedc89181c10ef12c004c5",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/fff6f1e4f36be0e0d0b84d66b413d9dcb0c49130",
+                "reference": "fff6f1e4f36be0e0d0b84d66b413d9dcb0c49130",
                 "shasum": ""
             },
             "require": {
@@ -3397,7 +3342,7 @@
                 "throwable",
                 "whoops"
             ],
-            "time": "2019-12-29T10:00:00+00:00"
+            "time": "2020-01-15T10:00:00+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -3564,16 +3509,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.9.4",
+            "version": "1.9.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "579bb7356d91f9456ccd505f24ca8b667966a0a7"
+                "reference": "b2c28789e80a97badd14145fda39b545d83ca3ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/579bb7356d91f9456ccd505f24ca8b667966a0a7",
-                "reference": "579bb7356d91f9456ccd505f24ca8b667966a0a7",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/b2c28789e80a97badd14145fda39b545d83ca3ef",
+                "reference": "b2c28789e80a97badd14145fda39b545d83ca3ef",
                 "shasum": ""
             },
             "require": {
@@ -3608,7 +3553,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2019-12-15T19:12:40+00:00"
+            "time": "2020-01-17T21:11:47+00:00"
         },
         {
             "name": "nunomaduro/collision",
@@ -5047,60 +4992,6 @@
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
             "time": "2019-06-13T22:48:21+00:00"
-        },
-        {
-            "name": "vikdiesel/admin-one-laravel-dashboard",
-            "version": "v1.3.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vikdiesel/admin-one-laravel-dashboard.git",
-                "reference": "8b7b98bdceb420ec38a0acfd92373f0cc3077d99"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vikdiesel/admin-one-laravel-dashboard/zipball/8b7b98bdceb420ec38a0acfd92373f0cc3077d99",
-                "reference": "8b7b98bdceb420ec38a0acfd92373f0cc3077d99",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "^6.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "AdminOneLaravelDashboard\\Package\\PackageServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "AdminOneLaravelDashboard\\Package\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Viktor Kuzhelnyi"
-                }
-            ],
-            "description": "Admin One - Laravel Dashboard Preset (SPA)",
-            "homepage": "https://github.com/vikdiesel/admin-one-laravel-dashboard",
-            "keywords": [
-                "SPA",
-                "bulma",
-                "dashboard",
-                "laravel",
-                "preset",
-                "template",
-                "vue",
-                "vue-js",
-                "vuex"
-            ],
-            "time": "2019-11-12T15:09:23+00:00"
         },
         {
             "name": "webmozart/assert",

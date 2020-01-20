@@ -15,15 +15,12 @@
 </template>
 
 <script>
-import moment from 'moment'
 import { mapState } from 'vuex'
 
 export default {
   name: 'FooterBar',
   computed: {
-    year () {
-      return moment().year()
-    },
+
     ...mapState([
       'isFooterBarVisible'
     ])
