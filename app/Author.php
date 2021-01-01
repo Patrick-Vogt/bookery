@@ -20,9 +20,9 @@ class Author extends Model
 return $this->hasMany('App\Book');
 } 
 
-/*     public function author()
+     public function author()
     {
         return $this->belongsTo('App\Author');
-    } */
+    }
 
 }

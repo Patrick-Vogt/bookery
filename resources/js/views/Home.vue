@@ -15,8 +15,8 @@
             bordered
             striped
           >
-            <template slot-scope="props">
-              <b-table-column field="coverpath" label="Cover" width="40">
+            <template>
+              <b-table-column field="coverpath" label="Cover" width="40" v-slot="props">
                 <b-button
                   class="is-customcolor"
                   icon-left="image-search-outline"
@@ -31,15 +31,16 @@
                 label="Author"
                 searchable
                 sortable
+                v-slot="props"
               >
                 {{ props.row.author_name }}
               </b-table-column>
 
-              <b-table-column field="title" searchable label="Title" sortable>
+              <b-table-column field="title" searchable label="Title" sortable v-slot="props">
                 {{ props.row.title }}
               </b-table-column>
 
-              <b-table-column label="Send">
+              <b-table-column label="Send" v-slot="props">
                 <span>
                   <b-button
                     class="is-customcolor"
@@ -49,7 +50,7 @@
                   </b-button>
                 </span>
               </b-table-column>
-              <b-table-column label="Delete">
+              <b-table-column label="Delete" v-slot="props">
                 <span>
                   <b-button
                     class="is-danger"

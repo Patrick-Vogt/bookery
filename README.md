@@ -12,13 +12,21 @@ Bookery will extract the needed metadata (author, title, cover) and organize the
 You can easily search all your books and send them with 2 clicks directly on your reader! - Works with Amazon Kindle!
 
 
+
+## Changelog
+### 01.01.2021
+- Update to Laravel 8
+- Update Dependencies
+- Fixed changes that came with buefy >0.9X
+
+
 ## Installation
 
 Make sure, you have following installed:
 
  1. Apache / NginX
  2. MySQL / MariaDB
- 3. PHP 7.2+ & ZIP-Module
+ 3. PHP 7.3+ & ZIP-Module
 
 Install the requirements and setup in the following order: 
 
@@ -31,10 +39,11 @@ Install the requirements and setup in the following order:
  7. Setup Emailaccount in .env
  8. php artisan migrate
  9. npm install 
- 10. Configure Webserver or use artisan serve
- 11. Open <YourDomain>/register and register your account
+ 10. npm run production
+ 11. Configure Webserver or use artisan serve
+ 12. Open <YourDomain>/register and register your account
  
- 12. Login to your account - Done
+ 13. Login to your account - Done
 
  
 

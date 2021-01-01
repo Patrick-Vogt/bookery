@@ -77,8 +77,8 @@ class BookController extends Controller
         foreach ($books as $book) {
             Bookcontroller::getExtension($book);
             return response()->json([
-            'data' => [
-                'data' => 'success'],
+                'data' => [
+                    'data' => 'success'],
             ]);
 
         }
@@ -217,52 +217,41 @@ class BookController extends Controller
         $selectedbook = $request->input('bookpath');
         $user = auth()->user();
 
-
         $data = array('email' => $user->kindleemail, 'book' => $selectedbook);
-        
-        Mail::send([], $data, function( $message ) use ($data)
-    {
-            $message->to( $data['email'] )
-            ->from( env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'))
-            ->subject( 'Ebook' )
-            ->attach($data['book']);
 
-    
-
+        Mail::send([], $data, function ($message) use ($data) {
+            $message->to($data['email'])
+                ->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'))
+                ->subject('Ebook')
+                ->attach($data['book']);
 
         });
         return response()->json([
-        'data' => [
-            'data' => 'success']
+            'data' => [
+                'data' => 'success'],
         ]);
 
-}
+    }
 
-public function deleteBook(Request $request) {
+    public function deleteBook(Request $request)
+    {
 
-$bookid = $request->input('bookid');
-$bookpath = $request->input('bookpath');
+        $bookid = $request->input('bookid');
+        $bookpath = $request->input('bookpath');
 
-$deleterow = Book::where('id', '=', $bookid)->delete();
+        $deleterow = Book::where('id', '=', $bookid)->delete();
 // Delete Bookdir
-$chunks = explode('/', dirname($bookpath));
-$pathtodelete = $chunks[0] . '/' . $chunks[1];
+        $chunks = explode('/', dirname($bookpath));
+        $pathtodelete = $chunks[0] . '/' . $chunks[1];
 
-$file = new \Illuminate\Filesystem\Filesystem;
-$file->cleanDirectory($pathtodelete);
+        $file = new \Illuminate\Filesystem\Filesystem;
+        $file->cleanDirectory($pathtodelete);
 
-return response()->json([
-    'data' => [
-        'data' => 'success'],
-]);
+        return response()->json([
+            'data' => [
+                'data' => 'success'],
+        ]);
 
-
-
-
-}
-
-
-
-
+    }
 
 }
